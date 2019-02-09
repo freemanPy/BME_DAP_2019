@@ -1,0 +1,65 @@
+1.	Óra 2019.02.05 Gáspár Csaba 8:30tól lesz innentől, szerda 10:15 től
+DAP a tárgy mozaikneve (?talán data analysis platforms?)
+Követelmények, CRISP-DM Gáspár Csaba
+Adatelemzési platformok a tárgy címe
+Ez egy specializáció része, “adat és media informatika” mellékspeci=szakirány az msc-n belül
+Adatelemzés a cél, érdekes története van hogy hogyan jött létre a kurzus
+De igazából data science-t tettek bele
+Ez az alapozó tárgy a 3 ból, köv félévben szövegelemzés, log elemzés; 3.félév hang és video elemzés—ez ca 6 udemy kurzus, az elmélyedéshez még kell más is, pl gyakorlati hely, labor
+Mo-n most épp nem nagyon tanít ilyet más egyetem, szándékig jutottak
+    
+    Bevezetés-data scientist skillset
+-stat, machine learning, optimization: itt machine learning kerül elő a kurzuson
+-programming, cs fundamentals: itt python kerül elő picit, algoritmus elmélet viszont nem
+-visualisation, off the shelf toolboxes: itt nem sok minden lesz, mert nem találtak oktatót aki speci értene ehhez
+-business and domain knowledge: ehhez inkább storyzás lesz, de hitelbírálni ebből még nem tudsz
+-big data, cloud computing: Mo-n ez fut legjobban, a lényeg h hogy érd el h ne csak a saját laptopodon fusson amit előállítasz
+-communication, story telling: be tud mutatni azokat az összefüggéseket a laymen audiencnek amire rájöttél, úgy hogy megértse
+
+Btw ehhez a 6hoz egyszerre nem igazán ért senki jól
+A HR találta ki, hogy ilyen ember létezzen 1 személyben. Azóta ők is találkoztak a realitással, a mai unikornis pár: 1. Story-telling, értelmezés, összefüggéskeresés- újabban ez a data scientist; 2. Big data, működtetés, infrastruktúra működtetése-ez a data engineer
+Pl. hívhatod magadat AI szakembernek is akár, mert e percben everything goes and no one knows exactly what any of this is supposed to mean
+Nem hisz a ppt-ben, szóval ő táblára ír inkább
+Rapid miner és python lesz először
+A szakirányon 23 hallgató van hivatalosan, a dm lab szereti a külsősöket az óráin, kb ugyanennyi külsős van
+Informatikusok alapjaira építenek
+A dm lab az oktogonon van, szóval nem a tanáriban az egyetemen
+Elmélet-gyakorlat egybeöntve lesz
+
+Sok-sok tutorial online elérhető, de
+- szerinte ezt rossz egyedül tanulni, mert sok a buktató, ami frusztrál, így könnyű abbahagyni
+- ő dolgoztatna minket csoportban, de nincs meg a skillset a csapatmunkához a magyar egyetemistáknal
+“magyar megy usa egyetem story, a céghez azért vesznek fel amihez értesz, de azért rúgnak ki ahogyan a többiekkel viselkedsz”
+-A tutorial mindig egy nagyságrenddel jobban működik, mint a mindennapi adathalmaz
+
+Mesélni fog arról, hogy mindez, hogy ágyazódik bele az üzleti világba, az üzlet-technológia határán közvetítő embereket akarnak igazából a HR-en
+6db beadandó, kis házi lesz, opcionális; 30-120 perc nagyságrendben, moodle ben csinálják a hallgatóik, a külsősök még nem tudni hova tölthetik fel, ha külön kéred még ki is javítják, 0 vagy  4 pont/házi, lehet javítani és újra beküldeni
++1 nagy házi Kaggle.com ők adatbányászati versenyeket írnak ki, ez a data science történelmi eredete is, 2 éve megvette a google, itt lesz kiírva egy verseny; pl. előre jelezni h ki fog bejárni az utolsó óráig az első x óra megjelenése/gépelési adatai alapján
+ fura az immediate feedback, mert az adathalmaz 30%án teszteli a megoldást, de a végén 100%ra adják a jegyet és a két adathalmaz ugye másképp viselkedhet…. Deadline utolsó hét vasárnap dél
+Baseline megoldás: amit ő összedob 1óra alatt, az lesz a legjobb megoldás amit vki beküld (50 pont), a kettő közt féluton lesz 10 pont, exponenciálisan nő utána, 10 és 50 pont közt félúton indul a 20 pont, aztán 20 és 50 pont közt félúton indul a 30—ez csak a neptunkódos hallgatóknak verseny így, ők neptun kóddal mennek ide
+ZH, saját géppel, elméletből, de nem tudják elolvasni a hallgatók kézírását, szóval google form, esszékérdések, 50 pont
+Év végén 40pont től 2es
+Egy google doc a tárgy info honlapja és lesz slack, kooperáció oké, másolás nem 
+                              Intro vége itt
+Mi volt a data science előtt?
+Data mining, üzleti intelligencia (business intelligence)-hírszerzés lenne, de arra nem akarták fordítani a 90-es évek Mo-ján, ennek érdekes unintended következményei lettek aztán
+Adatelemzés 8 lépcsője (by SAS)
+1.	Standard reportot akarsz az adatodból pl. neptun kiírja az átlagokat vagy távközlési jóslás; köv 1-3 hóban hány ügyfele fog szolgáltatót váltani=churn de ha kész van, már nem ezt akarod látni, több kérdésed lesz tőle
+2.	Ad-hoc reportokat akarsz: hány kártyás előfizető, hány céges előfizető ment el (2019 ben már ez szokott lenni), önkiszolgáló BI (business intelligence)
+3.	Amit kitalálsz lekérdezést, az egyből jelenjen meg online (ez régen volt téma)
+4.	Mi lenne, ha értesítést kapnál a furcsa eseményről (alerting) pl google alerts
+5.	Meglévő adatok vizualizációja (erről itt nem n lesz szó)
+6.	Statisztikai elemzés, hipotézis vizsgálat (ezt ma kevesen csinálják, sok az adat és nem kell p<0.05 ahhoz h lásd, vagy nem bírja el a stat szoftver az elemzést ekkora adattömbökkel)
+7.	Forecasting (controllinghoz kapcsolódóan), ehhez kell a szakértő keze is, nem lehet teljesen automatizálni még
+8.	Prediktív analitika, erről lesz itt a legtöbbször szó: rövid távon belülre elemi előrejelzés, nem az érdekel h összesen hány ügyfél lesz, hanem minden egyes ügyfélre előrejelezni h ő ügyfél lesz-e 6 hónap múlva
+A data science jelentős része itt van
++1 gép felismerés, itt is elemi események vannak pl van-e macska a képen, itt más metrikával értékelnek, noha a műveletek alapja hasonló
++2 optimalizáció: ha már nagyon ismered a működését, paraméter térben keresed a legjobb megoldást, nagy számítási kapacitás és kevés helyen fordul elő, pl minden eszköz a cégen belül van
+
+Egy ember előrejelezhetősége: nagy tömegben elég jól becsülhető—de visszacsatol a rendszer, nem lehet elérni a 100%ot; ez az elv picit megrogyott az elmúlt években, mert annyi adat van… hogy etikai oldala is van, hogy mi jöhet ki abból amit te számolsz, pl. ki milyen valószínűség szerint vándorol el story: target.com; terhes magazint kapott a család mielőtt tudta volna a családfő hogy terhes a 13 éves lánya—honnan látták (akár hamarabb mint a lány), termékváltás pl színtelen-szagtalan piperére vált x hónappal előtte; de ha a magazin költsége kicsi… 6 % esélyre már kimehet az újság) ez itt rendszer szintű probléma, mert sehol nem volt 1 ember akinek ez a felelőssége. 
+Néha el kell gondolkozni, hogy „de miért akarjátok ezt tudni”; nekik a lista akivel nem dolgozik a dmlab: dohánycég, a másik vonal hive mind döntés pl no go volt az h mi a felső korhatár ahol gazdaságilag megéri szürkehályog műtétet finanszírozni
+
+A tapasztalat az, hogy ezeket a lépcsőket alulról lehet mászni, amíg nem megy az 1. nem érdemes 6. szinttel próbálkozni annyira
+Story az utazási irodáról akiknek nem machine learning kellett hanem csak az a diagram hogy a hírlevélből jövő ügyfél jobb
+Techincal announcement
+Rapid miner kell, akadémiai licenc-szel; python 1.órát kihagyja, online tutorial-al készülsz fel
