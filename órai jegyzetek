@@ -63,3 +63,123 @@ A tapasztalat az, hogy ezeket a lépcsőket alulról lehet mászni, amíg nem me
 Story az utazási irodáról akiknek nem machine learning kellett hanem csak az a diagram hogy a hírlevélből jövő ügyfél jobb
 Techincal announcement
 Rapid miner kell, akadémiai licenc-szel; python 1.órát kihagyja, online tutorial-al készülsz fel
+
+2.	Óra 2019/02/12 Nagy Rácz István
+Register on kaggle
+A dap2019 slack csatorna closed, szóval csak a tanár meghívásával tudsz bekerülni
+Ma már lesz kisházi, ki van írva a honlapon, jövő kedd délig várják a megoldásokat
+A kaggle-s feladaton a csapatnév a konkrét versenyhez az, aminél megkötés lesz a névkonvenció, addig mindegy
+INTRO
+Miért pont ezt a két eszközt tanítják? Az első gyakorlatok is rapid minerben lesznek már
+A, enterprise eszközök: szoftverek, szolgáltatások, amiket a cégek pénzért vesznek, itt van support meg minden a pénzért
+Gartner figure kdnuggets.com 
+Rapidminer egy leader e percben a ds (enterprise)software-k között, ingyenesen elérhető, hozzáférhető (academic licence), a 3. ok pedig hogy az előadóknak van személyes kötődése is a céghez, a magyar fejlesztői teammel közös irodájuk van 😊
+B, ingyenes eszközök
+Python vs r; a python tör fel most az r rovására épp 2016-2018 táján
+Az ő véleményük az h az R nem is annyira jó :D web kdnuggets (12% használ both)
+Szóval nagy a python community és a python machine learning sokkal nagyobbat fut a trend keresőszavak alapján
+Kaggle-n is elhúzott a python a kernelek között (kernel itt a megosztott példa megoldás a felületükön)
+Githubon a javascript után már a python jön (java előtt)- ez minden fejlesztő, nem csak ds már—mert ez egy általános célú programozási nyelv—az R itt vérzik el, az egy speci adatelmezésre létrehozott nyelv, így sokkal nehezebb integrálni amit ott hozol létre
+És stackoverflow-n is ő a leggyakoribb hit az elmút években
+
+Most elindulunk egy kaggle versenyen és beadunk 1 megoldást rapidmineren
+Célja, hogy átrugdosson minket az első pár inflexiós ponton a tanulásban
+A knowledge versenyek a kaggle-n az ami kb tutorial, a tanulás a célja
+Jön a titanic dataset…—de nem ő csak azért is a house prices-t mutatja be
+Data description- a variables fül gyakorlatilag, a változók tulajdonságai, hogy néz ki az adathalmaz
+Az ingatlannak van ára, ezt kell modellezni az ingatlan tulajdonságai alapján
+A modell kialakításához a train.csv-t kell használni
+
+Rapid miner-gui – data flow szemlélet=rapid miner process az, amit az operátorokból építesz
+•	Operátor, ami adatelemzési alapműveletet hajt vége, kijön belőle egy másik adathalmaz
+Ki kell találni h milyen operátorokat milyen sorrendben akarsz
+Adatbeolvasás-operátor tab, drag and drop a kívánt operátor a vászonra
+Ettől a parameters tab nézet megváltozik, itt tudod beállítani az operátor tulajdonságait
+Import configuration wizard (de van show advanced parameters is)
+A változó típusa (numerikus vs nominális=kategória változó) és szerepe
+Az irányítószám pl. nem numerikus, mert nem alkalmazható rá semmilyen aritmetikai művelet, az nem elég h számként lehet ábrázolni
+Kategorikus pl. város, fűtés típus
+A numerikus változónak „végtelen” lehetséges értéke, a kategorikus változónál előre megadott fix értékkészlet van
+Műveletek, amit lehet kategorikus változóval csinálni: súlyozni, egyenlőséget vizsgálni
+Rendezés—pl átlagos ár a városban, méret szerint, abc—nem minden nominálist tudsz (sorba)rendezni
+Rapidminer takes an educated guess regarding the type of the variable (de csak az első 100 sor alapján)
+Valóságban egyesével végig mész a változókon, hogy ellenőrizd a tippjeit (pl irányítószámot benézné számnak)
+Milyen szerepe lehet a változóknak? 
+Eredmény=cél-ezt becsülöd a modelleddel
+magyarázó=bemeneti-ezt használod fel a modelben
+id változó
+
+Rapidmineren a label a cél változó neve
+Operátornak van portja, ezzel kötöd össze őket, ahhoz h megkapd az eredményt, az utolsó operátor portját ki kell kötni a result pontra
+Polynom változótípus- itt max egyezőséget vizsgálsz (quick fix, mert idő hiányában kihagyjuk az adattakarítás lépést a példában)
+Statistcis- ránéhetsz pl a változók értékkészletére
+Visualisations-adatok grafikus megjelenítése, csak itt
+
+Adabányászati modell, algorimtus- pl döntési fa, neurális modell, knn(k-nearest neighbour), base, lineáris regresszió
+Lin reg a legegyszerűbb algoritmus amit használunk, nem tud nominális változókkal mit kezdeni, vagy kihagyod vagy kódolod őket vhogy
+Rapidminerben az oszlop neve attribútum (select attributes)
+-attribute filter type-value type ez szűr típus alapján
+-value type ban adod meg h mit tartasz meg (numeric)
+Coefficiens oszlop a lin regben—ez a becslésnél a num változóhoz rendelt súly
+Az együtthatót úgy találja ki h az így képzett súlyozott összeg minél pontosabban becsülje a válaszváltozót
+Most jön be a test csv, külön operátorban, a struktúrája megegyezik (a tartalma más, más adatpontok itt), de itt nincs ár—megbecsülöd, ezt küldöd be, erre jelez vissza a kaggle h mennyire jó a tipp, ez a model kimenete
+
+Apply model operátor; unl port az unlabel, az az adathalmaz amin futtatod
+Itt elvesztettem hogy mit kötsz hova most gyorsan, hibák vannak az NaN-k miatt rengeteg oszlopban
+Nem jó ha a train és a test adat túlságosan különbözik egymástól
+Lett vmi labeled datasetem a végén, a lemaradt házi az az, hogy lakás id és predicted price-t kimented write csv re és submit to kaggle
+
+3.	Óra 2019/02/13 Nagy Rácz István
+
+Crisp-dm: egy adatelemzési módszertan, a projekt, főképp prediktív analitikai projektre ad keretet, hogy miképp hajtsd végre
+Cross Industry Standard Process for data mining: szóval alkalmazási területtől független, általános projetkmódszertan, gondolati keretet ad
+
+
+6 fő fázis
+1, business understanding: meg kell érteni az üzleti célokat, az üzleti problémát h ezt át lehessen fordítani adatelemzési céllá, problémává; definiált az adatelemzési célok üzleti sikerkritériumát-ezt átfordítani matematikai visszamérési függvénnyé
+2, data understanding: feltárni azokat az adathalmazokat, amiket fel lehet használni a problémához, minőség, h lehet összekapcsolni őket, hogy frissülnek, hol vannak
+3, data preparation: a cél h létrejöjjön az a táblázatos adathalmaz, elemzési adattábla ami tartalmazza a célváltozót és az összes olyan bemeneti változót, amit a célváltozó szempontjából fontosnak gondolsz, a bemeneti változók ált csak egy kiindulási halmaz, ebből szelektálsz, származtatott plusz változót hozol létre
+4, modelling: modellt építesz és ellenőrzöd, h matematikailag a modell mennyire oké
+5, evaluation: kiértékelés fázisa, NEM a modellek matematikai kiértékelése, hanem az üzleti kiértékelést tartalmazza, mennyire teljesíti a kitűzött üzleti kritériumokat
+6, deployment: ha van már egy üzletileg kiértékelt megoldásod akkor h fogod ezt felhasználni az adott üzleti környezetben, a gyakorlatban
+
+A munka 1-3 fázisra megy 80%a a maradék 20% a vége
+A módszertan iteratív, tehát ennél körkörösebb, lehet h vissza kell ugrani később mégis
+
+
+Mai példa a gyakorlaton  alkalmazási terület a hitelbírálat, classic adatbányászat felhasználási terület
+Konkrét példa-credit scoring, már az 50es években is mentek ebbe az irányba
+Olyan tanuló adattömb ahol megvan adva az is h mennyire sikeresen törlesztett, tehát múltbéli adatok, ez lehet binary is
+Tehát a modell múltbéli összefüggéseken alapul (és reménykedsz, hogy azóta ezek az összefüggések nem változtak, továbbra is érvényesek)
+
+
+Credit scorecard-a modell speci megjelenési formája, ez alapján zajlik az ügyfelek hitelminősítése—táblázat, benne tulajdonságok, numerikus változók értékkészlete intervallumokra osztva, minden kategóriához pontszám—adott ügyfél, aki ezzel a tulajdonsággal rendelkezik—pontozzák a táblázat alapján h mennyire jó adós
+
+Az a modell kell, ami nagyobb arányban találja el? —vagy amelyik nagyobb profitot hozott? , a modell 1 soronként dolgozik
+Az ület nem találati arányt fog mérni, hanem várható profitgörbét fog rajzolni---ez alapján állapítják majd meg a tresholdot
+
+Visszafizetési valszín alapján sorbarendezed az ügyfeleket-vágási érték pl 0,9—megnézed h valós adatokon mi történt—ki tudod számolni a profitot, bukást pontosan –kiszámolod 0.9-re, 0.8-ra stb (- akik nem fizették vissza, +akik visszafizették ténylegesen is)
+
+Nem pontosság kell itt, hanem a sorrendezésben kell h jó legyen a modelled
+
+Mi legyen a célváltozó?
+Elmarad a törlesztőrészlettel; a bedőlés azt jelenti náluk ált h 90 nap fölötti elmaradás volt bármikor—ő default os, azaz rossz adós-ezt kell becsülniük a bankoknak
+A célváltozó a legritkább esetben olyan, ami természetesen előfordul az eredeti adattömbben
+
+A credit scoringnak 2 vállfaja van 
+1.	application scoring: a bekért adatok a nyomtatványon, kereset, kor stb.
+2.	behavioural scoring: már ügyfél egyéb terméken, pl rálátsz a folyószámlájára, hitelkártyájára
+a behav data-t még gyúrni kell h beférjen a táblázatos adatokba (mert ott 1 tranzakció 1 sor, nem 1 ügyfél)—ez egy veszteséges adattömörítés ha a tranzakciósból csinálsz ügyfél szintű táblázatot
+lehet olyan modellt is ami a tranzakció adatokat is bemenetiként kezeli, de akkor ez már másik irány, ha nem aggregálsz akkor búcsút mondhatsz a táblázatos adat modellnek
+innen data prep
+hogy fogod kiválogatni azt az ügyfélhalmazt amin tréningezed a modelled? (hozd létre az elemzési adattáblát)
+lesz egy szűrés az ügyfelek között—csak a lezárt hitelesek? Vagy a még nyitottak közül is (ezek frissebbek) de kell olyan is aki nem fizetett vissza, vagy összes 3 hónaposnál régebben kezdett hitel?
+
+best practice
+megnézi az összes 1 hónapos hitelt, ebből megnézi h mennyi a defaultosok aránya ((0%) ahogy egyre öregebb a hitel úgy egyre növekszik a defaultosok aránya—telítődési görbét vársz—azt keresed, h hol van ahol már stabilabbá válik és az efölötti, de még élő hiteleket fogja beválogatni
+ itt open thread remained!!!!
+Modellezés
+-ha nominális akkor v eltalálja v nem (itt csak összehasonlítani tudsz)—ez az osztályozási modell; 
+-ha numerikus akkor kis hibával közelíti az értéket-ez a regressziós modell, itt nincsenek határok, bármilyen valós számot tippelhet válaszként
+---a  banki modell egy osztályozási probléma, mert ezek nem csak a kategóriát adják meg hanem a valószínűséget is a tipphez
+
