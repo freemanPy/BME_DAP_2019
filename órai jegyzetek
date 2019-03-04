@@ -1,4 +1,4 @@
-1.	Óra 2019.02.05 Gáspár Csaba 8:30tól lesz innentől, szerda 10:15 től
+	Óra 2019.02.05 Gáspár Csaba 8:30tól lesz innentől, szerda 10:15 től
 DAP a tárgy mozaikneve (?talán data analysis platforms?)
 Követelmények, CRISP-DM Gáspár Csaba
 Adatelemzési platformok a tárgy címe
@@ -7,15 +7,13 @@ Adatelemzés a cél, érdekes története van hogy hogyan jött létre a kurzus
 De igazából data science-t tettek bele
 Ez az alapozó tárgy a 3 ból, köv félévben szövegelemzés, log elemzés; 3.félév hang és video elemzés—ez ca 6 udemy kurzus, az elmélyedéshez még kell más is, pl gyakorlati hely, labor
 Mo-n most épp nem nagyon tanít ilyet más egyetem, szándékig jutottak
-    
-    Bevezetés-data scientist skillset
+Bevezetés-data scientist skillset
 -stat, machine learning, optimization: itt machine learning kerül elő a kurzuson
 -programming, cs fundamentals: itt python kerül elő picit, algoritmus elmélet viszont nem
 -visualisation, off the shelf toolboxes: itt nem sok minden lesz, mert nem találtak oktatót aki speci értene ehhez
 -business and domain knowledge: ehhez inkább storyzás lesz, de hitelbírálni ebből még nem tudsz
 -big data, cloud computing: Mo-n ez fut legjobban, a lényeg h hogy érd el h ne csak a saját laptopodon fusson amit előállítasz
 -communication, story telling: be tud mutatni azokat az összefüggéseket a laymen audiencnek amire rájöttél, úgy hogy megértse
-
 Btw ehhez a 6hoz egyszerre nem igazán ért senki jól
 A HR találta ki, hogy ilyen ember létezzen 1 személyben. Azóta ők is találkoztak a realitással, a mai unikornis pár: 1. Story-telling, értelmezés, összefüggéskeresés- újabban ez a data scientist; 2. Big data, működtetés, infrastruktúra működtetése-ez a data engineer
 Pl. hívhatod magadat AI szakembernek is akár, mert e percben everything goes and no one knows exactly what any of this is supposed to mean
@@ -25,13 +23,11 @@ A szakirányon 23 hallgató van hivatalosan, a dm lab szereti a külsősöket az
 Informatikusok alapjaira építenek
 A dm lab az oktogonon van, szóval nem a tanáriban az egyetemen
 Elmélet-gyakorlat egybeöntve lesz
-
 Sok-sok tutorial online elérhető, de
 - szerinte ezt rossz egyedül tanulni, mert sok a buktató, ami frusztrál, így könnyű abbahagyni
-- ő dolgoztatna minket csoportban, de nincs meg a skillset a csapatmunkához a magyar egyetemistáknal
+- ő dolgoztatna minket csoportban, de nincs meg a skillset a csapatmunkához a magyar egyetemistáknál
 “magyar megy usa egyetem story, a céghez azért vesznek fel amihez értesz, de azért rúgnak ki ahogyan a többiekkel viselkedsz”
--A tutorial mindig egy nagyságrenddel jobban működik, mint a mindennapi adathalmaz
-
+A tutorial mindig egy nagyságrenddel jobban működik, mint a mindennapi adathalmaz
 Mesélni fog arról, hogy mindez, hogy ágyazódik bele az üzleti világba, az üzlet-technológia határán közvetítő embereket akarnak igazából a HR-en
 6db beadandó, kis házi lesz, opcionális; 30-120 perc nagyságrendben, moodle ben csinálják a hallgatóik, a külsősök még nem tudni hova tölthetik fel, ha külön kéred még ki is javítják, 0 vagy  4 pont/házi, lehet javítani és újra beküldeni
 +1 nagy házi Kaggle.com ők adatbányászati versenyeket írnak ki, ez a data science történelmi eredete is, 2 éve megvette a google, itt lesz kiírva egy verseny; pl. előre jelezni h ki fog bejárni az utolsó óráig az első x óra megjelenése/gépelési adatai alapján
@@ -40,18 +36,18 @@ Baseline megoldás: amit ő összedob 1óra alatt, az lesz a legjobb megoldás a
 ZH, saját géppel, elméletből, de nem tudják elolvasni a hallgatók kézírását, szóval google form, esszékérdések, 50 pont
 Év végén 40pont től 2es
 Egy google doc a tárgy info honlapja és lesz slack, kooperáció oké, másolás nem 
-                              Intro vége itt
+Intro vége itt
 Mi volt a data science előtt?
 Data mining, üzleti intelligencia (business intelligence)-hírszerzés lenne, de arra nem akarták fordítani a 90-es évek Mo-ján, ennek érdekes unintended következményei lettek aztán
 Adatelemzés 8 lépcsője (by SAS)
-1.	Standard reportot akarsz az adatodból pl. neptun kiírja az átlagokat vagy távközlési jóslás; köv 1-3 hóban hány ügyfele fog szolgáltatót váltani=churn de ha kész van, már nem ezt akarod látni, több kérdésed lesz tőle
-2.	Ad-hoc reportokat akarsz: hány kártyás előfizető, hány céges előfizető ment el (2019 ben már ez szokott lenni), önkiszolgáló BI (business intelligence)
-3.	Amit kitalálsz lekérdezést, az egyből jelenjen meg online (ez régen volt téma)
-4.	Mi lenne, ha értesítést kapnál a furcsa eseményről (alerting) pl google alerts
-5.	Meglévő adatok vizualizációja (erről itt nem n lesz szó)
-6.	Statisztikai elemzés, hipotézis vizsgálat (ezt ma kevesen csinálják, sok az adat és nem kell p<0.05 ahhoz h lásd, vagy nem bírja el a stat szoftver az elemzést ekkora adattömbökkel)
-7.	Forecasting (controllinghoz kapcsolódóan), ehhez kell a szakértő keze is, nem lehet teljesen automatizálni még
-8.	Prediktív analitika, erről lesz itt a legtöbbször szó: rövid távon belülre elemi előrejelzés, nem az érdekel h összesen hány ügyfél lesz, hanem minden egyes ügyfélre előrejelezni h ő ügyfél lesz-e 6 hónap múlva
+	Standard reportot akarsz az adatodból pl. neptun kiírja az átlagokat vagy távközlési jóslás; köv 1-3 hóban hány ügyfele fog szolgáltatót váltani=churn de ha kész van, már nem ezt akarod látni, több kérdésed lesz tőle
+	Ad-hoc reportokat akarsz: hány kártyás előfizető, hány céges előfizető ment el (2019 ben már ez szokott lenni), önkiszolgáló BI (business intelligence)
+	Amit kitalálsz lekérdezést, az egyből jelenjen meg online (ez régen volt téma)
+	Mi lenne, ha értesítést kapnál a furcsa eseményről (alerting) pl google alerts
+	Meglévő adatok vizualizációja (erről itt nem n lesz szó)
+	Statisztikai elemzés, hipotézis vizsgálat (ezt ma kevesen csinálják, sok az adat és nem kell p<0.05 ahhoz h lásd, vagy nem bírja el a stat szoftver az elemzést ekkora adattömbökkel)
+	Forecasting (controllinghoz kapcsolódóan), ehhez kell a szakértő keze is, nem lehet teljesen automatizálni még
+	Prediktív analitika, erről lesz itt a legtöbbször szó: rövid távon belülre elemi előrejelzés, nem az érdekel h összesen hány ügyfél lesz, hanem minden egyes ügyfélre előrejelezni h ő ügyfél lesz-e 6 hónap múlva
 A data science jelentős része itt van
 +1 gép felismerés, itt is elemi események vannak pl van-e macska a képen, itt más metrikával értékelnek, noha a műveletek alapja hasonló
 +2 optimalizáció: ha már nagyon ismered a működését, paraméter térben keresed a legjobb megoldást, nagy számítási kapacitás és kevés helyen fordul elő, pl minden eszköz a cégen belül van
@@ -60,11 +56,11 @@ Egy ember előrejelezhetősége: nagy tömegben elég jól becsülhető—de vis
 Néha el kell gondolkozni, hogy „de miért akarjátok ezt tudni”; nekik a lista akivel nem dolgozik a dmlab: dohánycég, a másik vonal hive mind döntés pl no go volt az h mi a felső korhatár ahol gazdaságilag megéri szürkehályog műtétet finanszírozni
 
 A tapasztalat az, hogy ezeket a lépcsőket alulról lehet mászni, amíg nem megy az 1. nem érdemes 6. szinttel próbálkozni annyira
-Story az utazási irodáról akiknek nem machine learning kellett hanem csak az a diagram hogy a hírlevélből jövő ügyfél jobb
+Story az utazási irodáról, akiknek nem machine learning kellett hanem csak az a diagram hogy a hírlevélből jövő ügyfél jobb
 Techincal announcement
 Rapid miner kell, akadémiai licenc-szel; python 1.órát kihagyja, online tutorial-al készülsz fel
 
-2.	Óra 2019/02/12 Nagy Rácz István
+	Óra 2019/02/12 Nagy Rácz István
 Register on kaggle
 A dap2019 slack csatorna closed, szóval csak a tanár meghívásával tudsz bekerülni
 Ma már lesz kisházi, ki van írva a honlapon, jövő kedd délig várják a megoldásokat
@@ -81,7 +77,6 @@ Szóval nagy a python community és a python machine learning sokkal nagyobbat f
 Kaggle-n is elhúzott a python a kernelek között (kernel itt a megosztott példa megoldás a felületükön)
 Githubon a javascript után már a python jön (java előtt)- ez minden fejlesztő, nem csak ds már—mert ez egy általános célú programozási nyelv—az R itt vérzik el, az egy speci adatelmezésre létrehozott nyelv, így sokkal nehezebb integrálni amit ott hozol létre
 És stackoverflow-n is ő a leggyakoribb hit az elmút években
-
 Most elindulunk egy kaggle versenyen és beadunk 1 megoldást rapidmineren
 Célja, hogy átrugdosson minket az első pár inflexiós ponton a tanulásban
 A knowledge versenyek a kaggle-n az ami kb tutorial, a tanulás a célja
@@ -89,9 +84,8 @@ Jön a titanic dataset…—de nem ő csak azért is a house prices-t mutatja be
 Data description- a variables fül gyakorlatilag, a változók tulajdonságai, hogy néz ki az adathalmaz
 Az ingatlannak van ára, ezt kell modellezni az ingatlan tulajdonságai alapján
 A modell kialakításához a train.csv-t kell használni
-
 Rapid miner-gui – data flow szemlélet=rapid miner process az, amit az operátorokból építesz
-•	Operátor, ami adatelemzési alapműveletet hajt vége, kijön belőle egy másik adathalmaz
+	Operátor, ami adatelemzési alapműveletet hajt vége, kijön belőle egy másik adathalmaz
 Ki kell találni h milyen operátorokat milyen sorrendben akarsz
 Adatbeolvasás-operátor tab, drag and drop a kívánt operátor a vászonra
 Ettől a parameters tab nézet megváltozik, itt tudod beállítani az operátor tulajdonságait
@@ -114,7 +108,6 @@ Operátornak van portja, ezzel kötöd össze őket, ahhoz h megkapd az eredmén
 Polynom változótípus- itt max egyezőséget vizsgálsz (quick fix, mert idő hiányában kihagyjuk az adattakarítás lépést a példában)
 Statistcis- ránéhetsz pl a változók értékkészletére
 Visualisations-adatok grafikus megjelenítése, csak itt
-
 Adabányászati modell, algorimtus- pl döntési fa, neurális modell, knn(k-nearest neighbour), base, lineáris regresszió
 Lin reg a legegyszerűbb algoritmus amit használunk, nem tud nominális változókkal mit kezdeni, vagy kihagyod vagy kódolod őket vhogy
 Rapidminerben az oszlop neve attribútum (select attributes)
@@ -129,7 +122,7 @@ Itt elvesztettem hogy mit kötsz hova most gyorsan, hibák vannak az NaN-k miatt
 Nem jó ha a train és a test adat túlságosan különbözik egymástól
 Lett vmi labeled datasetem a végén, a lemaradt házi az az, hogy lakás id és predicted price-t kimented write csv re és submit to kaggle
 
-3.	Óra 2019/02/13 Nagy Rácz István
+	Óra 2019/02/13 Nagy Rácz István
 
 Crisp-dm: egy adatelemzési módszertan, a projekt, főképp prediktív analitikai projektre ad keretet, hogy miképp hajtsd végre
 Cross Industry Standard Process for data mining: szóval alkalmazási területtől független, általános projetkmódszertan, gondolati keretet ad
@@ -167,8 +160,8 @@ Elmarad a törlesztőrészlettel; a bedőlés azt jelenti náluk ált h 90 nap f
 A célváltozó a legritkább esetben olyan, ami természetesen előfordul az eredeti adattömbben
 
 A credit scoringnak 2 vállfaja van 
-1.	application scoring: a bekért adatok a nyomtatványon, kereset, kor stb.
-2.	behavioural scoring: már ügyfél egyéb terméken, pl rálátsz a folyószámlájára, hitelkártyájára
+	application scoring: a bekért adatok a nyomtatványon, kereset, kor stb.
+	behavioural scoring: már ügyfél egyéb terméken, pl rálátsz a folyószámlájára, hitelkártyájára
 a behav data-t még gyúrni kell h beférjen a táblázatos adatokba (mert ott 1 tranzakció 1 sor, nem 1 ügyfél)—ez egy veszteséges adattömörítés ha a tranzakciósból csinálsz ügyfél szintű táblázatot
 lehet olyan modellt is ami a tranzakció adatokat is bemenetiként kezeli, de akkor ez már másik irány, ha nem aggregálsz akkor búcsút mondhatsz a táblázatos adat modellnek
 innen data prep
@@ -183,3 +176,137 @@ Modellezés
 -ha numerikus akkor kis hibával közelíti az értéket-ez a regressziós modell, itt nincsenek határok, bármilyen valós számot tippelhet válaszként
 ---a  banki modell egy osztályozási probléma, mert ezek nem csak a kategóriát adják meg hanem a valószínűséget is a tipphez
 
+4. óra 2019/02/19
+Credits scoring folytatása
+Üzleti cél: hitelképesség eldöntése kérelmezéskor
+Üzleti értékeléskor: cél a profitgörbe felrajzolása
+Célváltozó: 90 napon túli késedelembe esett-e az ügyfél
+Eddig tartott a business understanding rész
+Innen most data understanding (application vs behav scoring)
+Aztán data prep amit mi itt ugrottunk, de igazából azt is kell csinálnod
+Majd modelling: osztályozás vs regresszió: mindkettő felügyelt tanulási módszer, azaz a tréning set-nél mind a bemeneti, mind a cél változók értéke ismert; nem minden algoritmus alkalmas mindkét féle változó kezelésére; más a modell sikerességének kiértékelési módszere is (találati arány vs minél kisebb hibával jelezzen előre)
+Vissza a modellezéshez:
+Először regresszióval próbálkozunk, azon belül is egyváltozós regresszió
+-Egy fv szerű determinációt keres ami korreláción alapul
+ a görbe pontoktól vett távolsága legyen minimális y=w0+w1*x1, az együtthatókat keresi, a tanulási adathalmazban minimalizálja a hibát, pontosabban a hibanégyzet átlagát minimalizálja—ettől ez a típusús modell érzékenyebb a kiugró értékekre
+Többváltozós lineáris regresszió: bemeneti változók lineáris kombinációjaként; eltolás és súlyok
+y ̅=w_0+∑_i▒〖w_i*x_i 〗
+Pozitív együttható-> gerjesztő hatása van a célváltozóra, míg a negatívnak gátló
+A lineáris reg-re hat, hogy mi a bemeneti változó értékkészlete, ettől a koefficiens nem = a súllyal!, mert lehet h x1 értékkészlete 0-1 míg x2 10-100
+Normalizált változókkal dolgozni: minden változó értékét transzformálja 0 és 1 közé---így a kapott együtthatók már kezelhetőek súlyokként
+
+Bináris célváltozó
+Sorba rendezéses modellmekkora a valószínűsége az 1-nek
+Logit transzformáció
+log⁡(1/(1-p))=w_0+∑_i▒〖w_i*x_i 〗
+p=e^(w0+∑_i▒〖w_i*x_i 〗)/(1+e^(w0+∑_i▒〖w_i*x_i 〗) )
+
+Ez volt a logisztikus regresszió, a p az valszín p érték
+A problémái, korlátai ennek a modelltípusnak:
+Nominális bemeneti változók? Lehetőségeid:
+ Kihagyod
+ha fix az értékkészlete újrakódolod számokká, lehetőleg ne 0-val
+—de ha nem ordinális akkor ezt ne akard csinálni, az ordinálisnál se akard ezt ha van más ötleted, mert az arányok ott se stimmelnek majd jó eséllyel
+	Dummy változó képzés: annyi változót képzel a bemeneti változóból ahány értékel felvehet (mínusz 1, ha zavar a redundancia) és 0-1 be kódolod le
+Eredeti változó	A1	A2	A3
+*
+	1	0	0
+#	0	1	0
+@	0	0	1
+Itt is van „probléma”, mert x-1 változóból már képezhető az x-ik dummy változó, redundáns az info tárolás, elég lenne itt pl 2 változó, a 3 változó nem lesz független—tehát érdemes csökkenteni ezeket az összefüggéseket és (értékkészlet-1) db dummy változót hozol létre
+
+Lin reg és log reg is független bemeneti változókat feltételez
+Másik megoldás: az adott nominális változó értéket cseréld le a hozzátartozó célváltozók átlagával a tanuló szetten (pl északra néző lakások); bináris bemenetnél pl 1 gyakorisági eloszlását (1esek aránya)
+Weight of evidence (WoE) ~ az előbbihez (ez egy hiányos táblázat lenne, ne zavarjon ha nem jön ki 😊
+Age, csoportosítja: missing,18-22,23-26,27-29,30-35,36-44,44+
+Count 1000,4000,6000,10000,10000,3000
+GoodS -,3040, sum36160
+BadS -, 960,   sum3840
+WoE -, ln ((3040/36160)/(960/3840))=-1.09
+WoE=ln(dist good/dist bad), ha a WoE érték mindenhol, minden értéknél ugyanannyi (0) akkor elkedvetlenedsz; az a változó jó ahol ezek az értékek nagyon különbözőek (-∞ és +∞ között lehet), ha az érték negatív akkor ebben a példában a részhalmazban a rossz adósok aránya nbb mint a sokaság egészében
+Azt akarod h a különböző kategóriák WoE értéke eltérjen
+Mennyire magyarázza célváltozó értékét???
+Ez neki ahhoz kell, hogy ezzel alakítsa ki az elvárt scorecard formát
+Dist alatt az eloszlást érti
+Az adathalmazban 9:1 a jó és rossz adós arány,
+A score egyik kiszámítási módja: Veszi a változóhoz tartozó együtthatót a regressziós modellből és ezt megszorozza az adott kategóriához tartozó WoE értékkel—voilá a score!
+Numerikus változóknak intervallumokat képez ezt megcsinálja nominálisra is, ott is WoE
+A WoE táblázaton épít egy regr modellt ebből lesz neki Wi—azért WoE-n futtat modellt mert ezekkel a paraméterekkel nem lehet lin modellt ha előtte nem szereled meg a változót, mert intervall meg nomin az eredeti
+ez előtt érdemes még
+Vedd ki a nem értelmes, hasznos változót; mert a lin és log regr minden bemeneti változóhoz fog együtthatót számolni, ahhoz is ami nem tartalmaz összefüggést a célváltozóval, ez zajként jelenik meg az előrejelzésében és csökkenti a többi, valóban fontos változó erejét
+A log transzformáció felnagyítja a kis hatást/összefüggést, de amíg a nem hasznosak kiszűrésére használod és nem az összefüggés erősségét viszonyítod egymáshoz addig oké
+5.  óra 2019/02/26 gyak
+Credit scoring modelt építünk, WoE számítás rapidminerrel
+Change column separator if needed
+Set status=célváltozó, ez lesz a label
+Nem kötjük be az első portot, mert akkor összeomlik gyakran
+Within parameteres dataset,  vmi metadata, edit list gomb  parameterrs set var20 from integer to binom-itt átállítottuk egy változó típusát
+Logistic regression wants numeric, not nominal
+Select attributes a szűrés, filter type value numeric változókra szűrsz így
+Outputban coefficient a W
+Intercept—a W0 eltolás a képletben
+
+
+Nézzük meg h mennyire jó a modell pl cross validálás
+Megnézni h mennyit hibázik—de ehhez split validation kell csinálnod azaz adattömbböl training és test setet leosztani
+Míg a cross validation az adathalmazt felvágja mondjuk  4 részre, beletesz 4 db tanulási iterációt 1.első negyed a teszt halmaz—épít modellt, van hatékonyság, 2. iteráció, 2. adatnegyedddel uez stb---lesz 4 modell, 4 hatékonysággal ez kicsit jobb mint a split validation mert az adathalmaz minden részét felhasználja a tanuláshoz a 4 hatékonyságnak ideális esetben közel azonos hatékonyságúnak kell lennie—nem mindegy hogyan vágod szét pl túl kevés data point, v sorba volt rendezve—ezt ki kell akkor javítani
+Sorrendezéssel akarod ellenőrizni hogy milyen jó a modell
+Split validation operátor, ennek van belseje, dupla klikk
+ performance binomial classification az az operátor ami teszteli a modell teljesítményét
+ relative split -aránnyal dolgozik, van abszolút is ami sor db számra megy
+Sampling type- random (shuffled) az automata, de lehet lineárist, meg stratified (rétegzett) is—ez arra jó ha adott változó eloszlását akarod megőrizni mindkét szettben
+Use local random seed-azért kell h mindenki ugyanazt kapja közülünk—mert mindenkinél ugyanúgy vágja szét training és tesztre
+Average portot is ki kell kötni
+Ha a modell mindenkire azt tippeli h jó adós—akkor 99%os lesz 10%rossz adós esetén… de ez nem az amit te keresel megoldásként mégse
+  ez így még gyenge teljesítmény
+Hogyan lehet felokosítani? Be kell adni nominálisokat, woe t kell számolni
+WoE-t kell számolni
+WoE=ln(no of good adós/all_good)/(no of bad/all_bad)—ezt minden kategóriára külön kiszámolni
+Subprocess process, h átlátható maradjon a rendszer—ez egy sub tab végülis vizuálisan
+Aggregate~ mint a sql groupby
+Binomiális változót nem tudsz összeadni, csinálunk egy numerikus célváltozót
+ 
+Stringként értékeli az 1 et, ezt meg kell oldani itt
+ 
+A generate attributes csak 1 adathalmazon belül tud dolgozni, szal össze kell illeszteni a két adathalmazt
+6.óra 2019/02/27
+A kisházi ennek a gyakorlatnak a folytatása
+Sum adta meg a rosszak számát
+A count adta meg az összes entry számát
+J click show example set results
+Stg is going on w my process, need to correct it based on updated version (vmiért kb megnégyszereztem az elemszámot???)
+
+100% accuracy lett a modell, ez mindig gyanús a num label a bűnös, ez a log regr specialitása,h rátanult erre
+
+Mit kezdjünk azokkal a változókkal ahol 0 volt a coefficiens
+Az algoritmus nem tudja kiszedni h melyik bementei változó értelmes, pl ha horoszkópot adod bele—a log reg ehhez is képez súlyt, emiatt érdemes kiválogatni a releváns változókat ( a célváltozó szempontjából)
+
+Ez a feature selection
+Nem normalizált változóknál az együttható nem = a súllyal
+A p value alapján is válogathatsz
+Forward selection, egy változós log regt épít, kiválasztja azt az egyet ami leghatékonyabb és ezt építi felfele egyesével, addig amíg a hatékonyság ettől nő
+A backwardnál meg egyesével veszed ki ami a legkevésbé rontja/még javítja
+A stepwise egy lépésben vizsgálja h hozzáadsz meg h ki is veszel
+(Moho algortimusnál az aktuálisan legoptimálisabb lépést teszti meg, de ez nem biztos h globálisan is az optimális lesz)
+A lin reg nem reagál jól arra, ha a bemeneti változók korrelálnak és ideális esetben nem engedsz összefüggő bementei változókat
+Rapidminerben van forward selection operátor
+Ha kiveszed a count változókat a modellből akkor már 71%ra megy a modell le, szóval segített rajta
+Kisházi válassz 1 nominális változót, amiből dummy változót készít pl personal statust és megnézni mit tesz ez a modell hatékonyságával, melyik a jobb?
+Aztán válassz egy numerikust amiből csinálj nominálist és nézd meg h ez hogy segít többet, dummyként v woe-ként
+A scorecardot kell leképezni még, de csak 1 változóra
+A WoE számolást a teljes adathalmazra csináltuk—és csak utána szedtük szét 2 részre
+WoE on training and test set should be very similar so this is the best practice, not a mistake, handle training and test together at this step—a kisháziban is!!
+Normalize operátor—ha ezt a preprocessing-et alkalmazod akkor nem vesz ki infot a teszt – adathalmazból, cserébe a normalizált változó lehet 1nél nbb v 0nál kisebb a teszt halmazban!  nagyházinál ezt érdemes figyelembe venni!!! 
+Nem minden modell képes extrapolálni (egyáltalán v jól)
+
+ADATELMEZÉSI ALAPPROBLÉMÁK
+A, felügyelt tanulási módszerek: olyan adathalmazokon, ahol mind a bemeneti, mind a célváltozó ismert és e kettő közötti kapcsolatot próbáljuk megtalálni, 2 aleset, 2 megoldást össze tudsz hasonlítani sikeresség szempontjából
+	a.1 regresszió: célváltozó numerikus, pl algoritmusra lin reg
+	a.2 osztályozás/calssification: célváltozó nominális, pl log regr
+B, nem felügyelt tanulás
+	b.1 clusterezés: adathalmazban olyan csoportokat képezni, ahol a bementei változók szempontjából intragroup n hasonló és intergroup pedig n különböznek egymástól, az osztályozással ellentétben itt nincsenek labelek, nincs meghatározva h a célváltozó milyen /hány db értéket vehet fel, eredményességét nem tudod ugyanígy mérni, mert nem tudod a helyes választ
+
+a1 és a2 bizonyos algoritmusok esetén feltételez ilyen intragroup hasonlóságot de pl a döntési fa nem ilyen, szóval nem feltétlenül!!!
+Clusterezési algoritmusok csoportosítása
+b1a   particionáló algoritmusok: kezdeti feltételezést betáplász, hány clustert sejtesz, ez alapján keres megadott db számú klasztert (jó kérdés h honnan tudhatnád…)
+K-means: átmentem onenote ba kifejteni ezt
